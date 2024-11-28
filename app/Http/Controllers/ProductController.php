@@ -54,6 +54,8 @@ class ProductController extends Controller
             'disclaimer' => 'nullable|string',
             'instruction' => 'nullable|string',
             'quantity' => 'required|integer|min:0',
+            'price' => 'required|numeric|min:0',
+            'discount' => 'nullable|numeric|min:0|max:100',
             'sizes' => 'required|array',
             'sizes.*.size_name' => 'required|string|max:255',
             'sizes.*.quantity' => 'required|integer|min:0',
